@@ -1,0 +1,295 @@
+/* Remove default spacing */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Design */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+
+    background-color: #173f5f;
+
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Navigation */
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 12px;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* Home Page Hero Section */
+
+.hero {
+
+    min-height: 420px;
+
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #20639b,
+        #3caea3
+    );
+
+    color: white;
+}
+
+
+.hero h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Explore Button */
+
+.button {
+
+    display: inline-block;
+
+    background-color: white;
+
+    color: #173f5f;
+
+    padding: 12px 24px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* Main Content */
+
+.content,
+.about {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+
+.content h2,
+.about h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    color: #173f5f;
+}
+
+
+/* Card Layout */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual Card */
+
+.card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px
+                rgba(0, 0, 0, 0.15);
+}
+
+
+.card h3 {
+
+    color: #20639b;
+
+    margin-bottom: 12px;
+}
+
+
+/* About Page */
+
+.about {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    min-height: 450px;
+}
+
+
+.about p {
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+
+    background-color: #173f5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+
+    margin-top: 40px;
+}
+
+
+/* ================================= */
+/* TABLET RESPONSIVE DESIGN */
+/* ================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    nav {
+
+        margin-top: 15px;
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+
+    .hero h2 {
+
+        font-size: 36px;
+    }
+
+}
+
+
+/* ================================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ================================= */
+
+@media screen and (max-width: 480px) {
+
+
+    nav a {
+
+        display: block;
+
+        margin: 10px;
+    }
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+
+        padding: 80px 15px;
+    }
+
+
+    .hero h2 {
+
+        font-size: 30px;
+    }
+
+
+    .hero p {
+
+        font-size: 17px;
+    }
+
+
+    .content,
+    .about {
+
+        width: 94%;
+    }
+
+}
